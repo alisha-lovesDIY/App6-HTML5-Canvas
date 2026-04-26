@@ -40,7 +40,7 @@ alert("This file last modified " + docMod); // generates alert box with time sta
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	
 function drawImage() { // This is the function to add my image
-	var canvas = document.getElementById("myCanvas";
+	var canvas = document.getElementById("myCanvas");
 	var ctx = canvas.getContext("2d");
 
 	var img = new Image(); 
@@ -52,10 +52,11 @@ function drawImage() { // This is the function to add my image
 	function drawRect(){
 		var canvas = document.getElementById("myCanvas");
 		var ctx = canvas.getContext("2d"); // creates the drawing object
-		ctx.fillstyle = "blue";
+		ctx.fillStyle = "blue";
 		ctx.fillRect(50, 50, 150, 100); // determines position of rectangle on canvas
+	}
 
-		function drawName() { // adds my name
+	function drawName() { // adds my name
 			var canvas = document.get.ElementById("myCanvas");
 			var ctx = canvas.getContext("2d"); // creates the drawing object
 			ctx.font = "20px Arial" // sets font and style for name
