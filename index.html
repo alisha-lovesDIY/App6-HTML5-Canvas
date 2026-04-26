@@ -57,12 +57,18 @@ function drawImage() { // This is the function to add my image
 	}
 
 	function drawName() { // adds my name
-			var canvas = document.get.ElementById("myCanvas");
+			var canvas = document.getElementById("myCanvas");
 			var ctx = canvas.getContext("2d"); // creates the drawing object
-			ctx.font = "20px Arial" // sets font and style for name
+			ctx.font = "20px Arial"; // sets font and style for name
 			ctx.fillText("Alisha", 100, 150); // writes the text "Alisha"
-			ctx.clearRect(0, 0, canvas.width, canvas.height) // clears everything from the canvas
-		}
+	}
+	function clearCanvas() {
+	var canvas = document.getElementById("myCanvas");
+	var ctx = canvas.getContext("2d");
+
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
+		
 		
 </script>
 
