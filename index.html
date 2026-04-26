@@ -39,30 +39,30 @@ var docMod = document.lastModified; // loads last modified time stamp into docMo
 alert("This file last modified " + docMod); // generates alert box with time stamp. If annoying, comment out this entire line.
 console.log("This file last modified " + docMod); // generates message in javaScript console (found in developers tools) with time stamp. 
 	
-function drawImage() { // This is the function to add my image
+function drawImage() { // loads and draws an image onto canvas
 	var canvas = document.getElementById("myCanvas");
 	var ctx = canvas.getContext("2d");
 
-	var img = new Image(); 
+	var img = new Image(); // creates image object so that it can load onto canvas
 	img.onload = function () {
 		ctx.drawImage(img, 50, 50, 200, 150); // determines position of image on drawing
 	};
 	img.src = "https://www.dutchgrown.com/cdn/shop/products/LilyStarGazer.jpg?v=1668676765"
 }
-	function drawRect(){
+	function drawRect(){ // draws blue rectangle on canvas
 		var canvas = document.getElementById("myCanvas");
 		var ctx = canvas.getContext("2d"); // creates the drawing object
 		ctx.fillStyle = "blue";
 		ctx.fillRect(50, 50, 150, 100); // determines position of rectangle on canvas
 	}
 
-	function drawName() { // adds my name
+	function drawName() { // writes my name on canvas
 			var canvas = document.getElementById("myCanvas");
 			var ctx = canvas.getContext("2d"); // creates the drawing object
 			ctx.font = "20px Arial"; // sets font and style for name
 			ctx.fillText("Alisha", 100, 150); // writes the text "Alisha"
 	}
-	function clearCanvas() {
+	function clearCanvas() { // clears everything from canvas
 	var canvas = document.getElementById("myCanvas");
 	var ctx = canvas.getContext("2d");
 
